@@ -1,8 +1,10 @@
+import './App.css'
+
 const ContactUnorderList = ({ contactList }) => {
 
   return (
-    <>
-     <ul>Name
+    <div className='Flex'>
+     <ul className="One">Name
       {
           contactList.map((singleContact) => {
             return <li key={singleContact.id}>
@@ -11,7 +13,7 @@ const ContactUnorderList = ({ contactList }) => {
           })
       }
      </ul>
-     <ul>Email
+     <ul className="One">Email
       {
           contactList.map((singleContact) => {
             return <li key={singleContact.id}>
@@ -20,7 +22,7 @@ const ContactUnorderList = ({ contactList }) => {
           })
       }
      </ul>
-     <ul>Phone
+     <ul className="One">Phone
       {
           contactList.map((singleContact) => {
             return <li key={singleContact.id}>
@@ -29,7 +31,7 @@ const ContactUnorderList = ({ contactList }) => {
           })
       }
      </ul>
-    </>
+    </div>
   )
 }
 

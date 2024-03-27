@@ -1,0 +1,39 @@
+@import url('https://fonts.cdnfonts.com/css/major-birch');
+
+.Flex {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-shadow: blue 1px 0 10px;
+  font-family: 'Major Birch', sans-serif;
+  -webkit-text-stroke: .35px black;
+}
+
+.One {
+  text-align: center;
+  font-size: 28px;
+}
+
+.One > li {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 18px !important;
+
+}
+
+.One > li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  /* #044a4b; */
+  cursor: pointer;
+  font-size: 30px !important;
+  border-radius: 10px;
+}
+
+.Two {
+  text-align: center;
+  color: white;
+  text-shadow: blue 1px 0 10px;
+  -webkit-text-stroke: .01px black;
+  font-family: 'Major Birch', sans-serif;
+  font-size: 40px;
+}

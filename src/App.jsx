@@ -23,7 +23,7 @@ function App() {
 
   return (
     <>
-      <h1>Contact List</h1>
+      <h1 className="Two">Contact List</h1>
       <ContactUnorderList contactList={contactList}/>
     </>
   )
