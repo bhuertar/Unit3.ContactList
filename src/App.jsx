@@ -11,8 +11,9 @@ function App() {
     const getContacts = async() => {
       const response = await fetch(BASE_API_URL);
       const json = await response.json();
+      // console.log(json);
       const contacts = json;
-      // console.log(contacts);
+      console.log(contacts);
       setContactList(contacts);
 
     }
@@ -23,7 +24,7 @@ function App() {
   return (
     <>
       <h1>Contact List</h1>
-      <ContactUnorderList/>
+      <ContactUnorderList contactList={contactList}/>
     </>
   )
 }
